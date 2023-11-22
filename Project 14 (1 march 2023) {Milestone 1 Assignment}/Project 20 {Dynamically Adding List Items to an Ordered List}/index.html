@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamically Adding List Items to an Ordered List</title>
+</head>
+<body>
+     <h2>What you'll learn</h2>
+     <ol id="list"></ol>
+	 <button id="add-item">Add item</button>
+	 <p id="message"></p>
+
+
+     <script>
+        let list=document.getElementById("list");
+        let btn=document.getElementById("add-item");
+        let message=document.getElementById("message");
+        let nextItemIndex=0;
+        function addItem(){
+              items=['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap'];
+             
+                   if(nextItemIndex<items.length)
+                   {
+                    let newitem=document.createElement("li");
+                    newitem.textContent=items[nextItemIndex];
+                    list.appendChild(newitem);
+                    nextItemIndex++;
+                   }
+
+                   else
+                   {
+                    document.getElementById("message").innerText="All items has been Updated";
+                   }
+             
+        }
+
+        btn.addEventListener('click',addItem);
+
+       
+     </script>
+</body>
+</html>

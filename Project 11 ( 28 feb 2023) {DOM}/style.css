@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 2px 16px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #414114;
+    color: #fff;
+}
+

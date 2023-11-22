@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Calculator</title>
+    <!-- CSS Portion -->
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .operation{
+        display: flex;
+        flex-direction: column;
+        padding: 100px 200px;
+        box-shadow: 0 0 15px #000;
+        gap: 50px;
+        
+    }
+
+    .input_operation{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input{
+        width: 100px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #str{
+        border: none;
+        border-bottom: 2px solid #000;
+    }
+
+    #str:focus{
+        border: none;
+    }
+
+    
+
+    button{
+        width:20px;
+        padding: 2px 6px;
+    }
+    </style>
+</head>
+<body>
+    <div class="operation">
+        <h1>Perfrom Your Opertaion</h1>
+        <div class="input_operation"> 
+        <input type="text" id="num1">
+        <input type="text" id="str">
+        <input type="text" id="num2">
+        <button  id="btn">=</button>
+        <input type="text" id="num3">
+    </div>
+    </div>
+
+
+    <!-- JS Operation -->
+    <script>
+        let op1;
+        let str;
+        let op2 ;
+        let op3=document.getElementById("num3");
+        let btnn=document.getElementById("btn");
+        
+        function result(){
+        let op1=eval(document.getElementById("num1").value);
+        let str= document.getElementById("str").value ;
+        let op2=eval(document.getElementById("num2").value) ;
+           
+
+        switch(str)
+        {
+            case '+':
+            {
+                op3= op1+op2;
+                document.getElementById("num3").value=""+op3;
+                break;
+            }
+            case '-':
+            {
+                op3= op1-op2;
+                document.getElementById("num3").value=""+op3;
+                break;
+            }
+            case '*':
+            {
+                op3= op1*op2;
+                document.getElementById("num3").value=""+op3;
+                break;
+            }
+            case '/':
+            {
+                op3= op1/op2;
+                document.getElementById("num3").value=""+op3;
+                break;
+            }
+            case '%':
+            {
+                op3= op1%op2;
+                document.getElementById("num3").value=""+op3;
+                break;
+            }
+
+            default:
+            alert("invail operator");
+        }
+        }
+
+        btnn.addEventListener('click',result)
+       
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f6f8fa;
+  }
+
+  button {
+    background: #6663e9;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+  }
+  
+
+header{
+    height: 125vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("../Photos/mainBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    position: relative;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+hr{
+    color: #fff;
+    height: 3px;
+    background-color: #fff;
+}
+
+.des{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.des h1{
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.des p{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+
+.des button{
+    position: relative;
+    top: 50px;
+}
+
+.mul-logo{
+    padding: 30px 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+   
+}
+
+.img-card-heading{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.card-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.img-card img{
+    border-radius: 20px;
+}
+
+.card-detail{
+    background-color: #fff;
+    padding: 20px 10px;
+   display: flex;
+   gap: 10px;
+   border-radius: 20px;
+   width: 70%;
+   justify-items: center;
+   position: relative;
+   bottom: 50px;
+   left: 20px;
+}
+
+.card-detail p{
+     color: blue;
+}
+
+.card-detail button{
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+.card2{
+    position: relative;
+    top: 20px;
+}
+
+.card3{
+    position: relative;
+    top: 40px;
+}
+
+.card4{
+    position: relative;
+    top: 40px;
+}
+
+.card5{
+    position: relative;
+    top: 40px;
+}
+
+.card8{
+    position: relative;
+    top: 20px;
+}
+
+.card9{
+    position: relative;
+    top: 40px;
+}
+
+.feature-sec1{
+   display: flex;
+   align-items: center;
+   
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+.feature-sec1 img{
+    border-radius: 20px;
+}
+
+.feature-sec1 .left-sec{
+    display: flex;
+}
+
+.feature-sec1 .left-sec .img{
+        position: relative;
+        right: 450px;
+        top: 50px;
+       
+       
+}
+
+.feature-sec1 .right-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.feature-sec1 .right-sec h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.feature-sec1 .right-sec p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.feature-sec2{
+   display: flex;
+   align-items: center;
+   gap: 100px;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+.feature-sec2 img{
+    border-radius: 20px;
+}
+
+.feature-sec2 .right-sec{
+    display: flex;
+    position: relative;
+    left: 400px;
+}
+
+.feature-sec2 .right-sec .img{
+        position: relative;
+        right: 450px;
+        
+       
+}
+
+.feature-sec2 .left-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    position: relative;
+    left: 200px;
+}
+
+.feature-sec2 .left-sec h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.feature-sec2 .left-sec p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+
+.inform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 200px;
+    background-color: #6663e9;
+    border-radius: 50px;
+    color: white;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.inform h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.inform p{
+    font-size: 20px;
+}
+
+.ins{
+    display: flex;
+    gap: 20px ;
+}
+
+.input{
+    padding: 5px 50px;
+    background-color: rgb(122, 122, 221);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px   ;
+   
+}
+
+.input input{
+    background-color: rgb(122, 122, 221);
+    border: none;
+    
+}
+
+.ins button{
+    background-color: #fff;
+    color:#6663e9;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+footer ul li a{
+    color: #000;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social ul{
+    display: flex;
+    gap: 10px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+

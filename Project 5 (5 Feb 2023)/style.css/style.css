@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Labrada:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image:url('../Assests/image2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 200px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px 25px 50px;
+    background-color: black;
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.bt{
+    font-size: 60px;
+    color: antiquewhite;
+    font-weight: 500;
+}
+
+nav ul li{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn{
+    padding: 5px 25px;
+    background-color: #c92ad4;
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h1{
+    font-size: 80px;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+section p{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+
+    
+

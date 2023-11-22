@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Create Title -->
+    <title>Match Password</title>
+    <!-- CSS work -->
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+
+     body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     div{
+        display: flex;
+        flex-direction: column;
+        padding: 100px 200px;
+        align-items: center;
+        gap: 30px;
+        box-shadow: 0 0 15px #000;
+     }
+
+     input{
+        font-size: 25px;
+     }
+
+     button{
+        font-size: 20px;
+        padding: 5px 10px;
+        cursor: pointer;
+     }
+    
+    </style>
+</head>
+<body>
+    <!-- HTML work -->
+    <div>
+        <input type="password" id="pass" placeholder="Create password">
+        <input type="password" id="pass1" placeholder="confrimed password">
+        <button id="btn">Submit</button>
+    </div>
+    
+
+
+
+
+    <!-- JS work -->
+    <script>
+    let createpass=document.getElementById("pass");
+    let confirmpass=document.getElementById("pass1");
+    const btnn=document.getElementById("btn");
+
+
+    function check(){
+     if(createpass.value === confirmpass.value){
+        console.log("Password Matched. Password validation Successfull");
+     }
+     else{
+        console.log("Password didn't match. Password validation unsuccessfull")
+     }
+    }
+    btnn.addEventListener('click',check);
+    
+    </script>
+    
+    
+</body>
+</html>

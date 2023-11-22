@@ -1,0 +1,138 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Labrada:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+/* universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* body css */
+
+body{
+    background-color: #0E131F;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+/* navgation part css */
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+}
+
+nav .hamb{
+    display: none;
+}
+
+nav .menu ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+li{
+    list-style: none;
+}
+
+/* computer part css */
+
+.dis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.dis .lift-dis .img span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dis .left-dis h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.dis .left-dis p{
+    color: yellow;
+    font-weight: 500;
+}
+
+/* main part css */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+main section .img-lay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer part css */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer section ul{
+    display: flex;
+    gap: 15px;
+}
+
+/* media quary for making responsive */
+@media screen and (max-width: 425px){
+
+    nav{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav .hamb{
+        display: block;
+    }
+
+    nav .menu{
+        display: none;
+    }
+
+    .dis{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+    }
+    
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Project title -->
+    <title>Color Combination</title>
+    <!-- CSS file -->
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" name="color" id="col1">
+        <input type="text" name="color" id="col2">
+        <button id="btnn" >Mixed</button>
+        <p id="show"></p>
+    </div>
+    
+
+
+    <!-- JS file -->
+    <script>
+     
+     let btn=document.getElementById("btnn");
+    
+     function result(){
+        
+        let color1=document.getElementById("col1").value;
+        let color2=document.getElementById("col2").value;
+        
+        switch(color1+color2)
+        {
+            case 'redblue':
+            {
+                document.getElementById("show").innerText="Purple";
+                break;
+            }
+            case 'bluered':
+            {
+                document.getElementById("show").innerText="Purple";
+                break;
+            }
+
+            
+            case 'redyellow':
+            {
+                document.getElementById("show").innerText="Orange";
+                break;
+            }
+            case 'yellowred':
+            {
+                document.getElementById("show").innerText="Orange";
+                break;
+            }
+
+            
+            case 'blueyellow':
+            {
+                document.getElementById("show").innerText="green";
+                break;
+            }
+            case 'yellowblue':
+            {
+                document.getElementById("show").innerText="green";
+                break;
+            }
+
+            
+
+
+
+
+        }
+      
+      
+     }
+
+     btn.addEventListener('click',result);
+
+
+   
+    </script>
+</body>
+</html>

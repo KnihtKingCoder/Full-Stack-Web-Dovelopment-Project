@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inst{
+
+  margin: 50px 500px;
+  
+}
+
+.ques{
+    margin: 20px 400px;
+}
+input{
+    margin-bottom: 20px;
+    padding: 2px 5px;
+}
+
+h2{
+    margin-bottom: 20px;
+}

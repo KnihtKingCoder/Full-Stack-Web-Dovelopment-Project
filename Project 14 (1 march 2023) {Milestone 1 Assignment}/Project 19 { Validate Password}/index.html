@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Passowrd</title>
+</head>
+<body>
+    <input type="text" name="email" id="val1">
+    <br>
+    <input type="password" name="password" id="val2">
+    <button id="btnn">click here</button>
+
+    <p id="res"></p>
+
+    <script>
+        let data1=document.getElementById("val1");
+        let data2=document.getElementById("val2");
+        let btn=document.getElementById("btnn");
+
+       function check(){
+       
+        data1=document.getElementById("val1").value;
+        data2=document.getElementById("val2").value;
+        check1=data1.includes('@');
+        check2=data2.length>=8;
+        if(check1 && check2)
+        {
+            document.getElementById("res").innerText="Valid email and password!";
+            document.getElementById("res").style.color="green";
+        }
+        else
+        {
+            document.getElementById("res").innerText="Invalid email or password!"
+            document.getElementById("res").style.color="red";
+        }
+
+        
+       }
+
+
+
+       btn.addEventListener('click',check);
+
+    </script>
+</body> 
+</html>

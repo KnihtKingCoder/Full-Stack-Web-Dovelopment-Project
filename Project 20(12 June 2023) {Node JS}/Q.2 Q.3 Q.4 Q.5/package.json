@@ -1,0 +1,11 @@
+{
+  "name": "q.1",
+  "version": "1.0.0",
+  "description": "This is the my second question of my assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "knight",
+  "license": "ISC"
+}

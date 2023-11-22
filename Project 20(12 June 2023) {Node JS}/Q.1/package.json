@@ -1,0 +1,15 @@
+{
+  "name": "q.1",
+  "version": "1.0.0",
+  "description": "This is the FIrst question of my assignmen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\"first\"",
+    "\"assignment\""
+  ],
+  "author": "Knight",
+  "license": "ISC"
+}

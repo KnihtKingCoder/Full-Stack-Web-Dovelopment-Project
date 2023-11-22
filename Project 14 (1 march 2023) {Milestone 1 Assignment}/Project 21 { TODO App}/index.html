@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+</head>
+<body>
+    <input type="text" id="val1">
+    <ol id="list"></ol>
+    <button id="btnn">Submit</button>
+
+    <script>
+        let input_data=document.getElementById("val1");
+        let list=document.getElementById("list");
+        let btn=document.getElementById("btnn");
+
+        btn.addEventListener('click',()=>{
+            input_data=document.getElementById("val1").value;
+            let item=document.createElement("li");
+            item.textContent=input_data;
+            
+            list.appendChild(item);
+        })
+    </script>
+</body>
+</html>
